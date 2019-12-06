@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Galactic Guess | Word Guessing Game</title>
+  <!--Import fontawesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+  <!--Import materialize.min.css-->
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" />
+
+  <!--Import main.css-->
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+
+  <!--Import meteor-favicon.png-->
+  <link rel="shortcut icon" type="image/png" href="assets/img/meteor-favicon.png">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galactic Guess | A Guessing Game</title>
 </head>
+
 <body>
-    <h1>Initial Commit</h1>
+  <!-- Header -->
+  <header class="main-header">
+
+    <!-- Main Navigation -->
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Galactic Guess</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+           <li>
+              <a target="_blank" rel="noopener" class="active-link" href="https://www.linkedin.com/in/sipo-cyrus-charles/">Linkedin</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/sipostudent/Galactic-Guess">Github</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://resume.io/r/02mBIwG0D" class="btn cv-button"><span class="text-white">Download CV</span></a>
+            </li>
+          </ul>
+
+          <!-- Side Navigation -->
+          <ul class="side-nav" id="mobile-nav">
+            <li>
+              <div class="nav-game-logo center">Galactic Guess</div>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+              <li>
+                <a target="_blank" rel="noopener" class="active-link" href="https://www.linkedin.com/in/sipo-cyrus-charles/">
+                  <span class="icons"><i class="fab fa-linkedin"></i></span> Linkedin
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="https://github.com/sipostudent/Galactic-Guess">
+                  <span class="icons"><i class="fab fa-github"></i></span> Github
+                </a>
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+            <li>
+              <a target="_blank" rel="noopener" href="https://resume.io/r/02mBIwG0D" class="btn cv-button">Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Game Showcase -->
+    <div class="game-showcase container">
+      <div class="row">
+        
+        <div class="col s12 m10 offset-m1 center">
+          <h3>Galactic Guess</h3>
+          <h5>-Choose The Right Planets-</h5>
+        </div>
+        
+        <div class="col s12 m10 offset-m1 center">
+          <h5 id="welcome" class="blink">To Start Press Any Key</h5>
+    
+          <br>
+          <div><h5>Current Word:  <span id="currentWord"></span></h5></div>
+          <br>
+
+          <div><h6>Victories:  <span id="totalWins" class="varColor"></span></h6></div>
+          <div><h6>Guesses Left:  <span id="remainingGuesses" class="varColor"></span></h6></div>
+          <div><h6>Used Guesses:  <span id="guessedLetters" class="varColor"></span></h6></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!--Import materialize.min.js-->
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+
+  <!--Import game.js-->
+  <script src="assets/js/game.js"></script>
+  <!--Import nav.js-->
+  <script src="assets/js/nav.js"></script>
+
 </body>
+
 </html>
