@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="static/img/galactic_guess_snapshot.png" width="600">
+  <img src="assets/img/galactic_guess_snapshot.png" width="600">
   <br>
     <br>
   Galactic Guess 
