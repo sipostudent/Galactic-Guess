@@ -1,0 +1,133 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Saira");
+
+/* The Body */
+
+body {
+	font-family: "Saira", sans-serif;
+	letter-spacing: 0.5px;
+}
+
+
+/* Background Image Overlay */
+
+.primary-overlay {
+	background: rgba(112, 81, 176, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/* Main Header */
+
+.main-header {
+	background: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 600px;
+	height: 100vh;
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	text-shadow: 0 0 5px #d847f1, 0 0 10px #d847f1, 0 0 15px #d847f1, 0 0 20px #6a1b9a, 0 0 30px #6a1b9a, 0 0 40px #6a1b9a, 0 0 55px #6a1b9a, 0 0 75px #d847f1;
+}
+
+
+/* Main Header - Showcase */
+
+.main-header .game-showcase {
+	padding-top: 50px;
+}
+
+#currentWord,
+#percentScore {
+	letter-spacing: 4px;
+	color: #d847f1;
+}
+
+.varColor {
+	color: #d847f1;
+}
+
+
+/* Main Navigation */
+
+nav ul a {
+  color: #fff;
+  transition: all 150ms ease-out;
+}
+
+nav ul a:hover {
+	color: #d847f1;
+}
+
+/* Icons */
+.icons {
+  color: #fff !important;
+}
+
+
+/* Buttons */
+
+.cv-button {
+	background-color: #7a3ea0 !important;
+}
+
+.cv-button:hover {
+	background-color: #d847f1 !important;
+}
+
+.btn {
+	border-radius: 24px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+
+/* Game Logo */
+
+a.brand-logo {
+	font-size: 1.1rem;
+}
+
+
+/* Side Navigation */
+
+.side-nav {
+	background: rgba(112, 81, 176, 0.7);
+}
+
+.side-nav li>a {
+	color: #fff;
+}
+
+
+/* Text Blink Effect */
+
+.blink {
+	color: #d847f1 !important;
+	animation: blink linear 2s infinite !important;
+}
+
+.noBlink {
+	visibility: hidden;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
